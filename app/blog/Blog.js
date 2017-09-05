@@ -1,12 +1,12 @@
 var app = angular.module('myApp');
 
-app.factory('Blog', [ function() {
-    function Blog() {
+app.factory('Blog',  function() {
+    var Blog = function() {
 
         this.id = "";
         this.name = "";
         this.category = "";
-        this.backlinks = 0;
+        this.backLinks = 0;
     };
     return Blog;
-}]);
+});

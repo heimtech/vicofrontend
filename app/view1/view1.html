@@ -1,6 +1,25 @@
-<p>This is the partial for view 1.</p>
+<div id="blogView">
+<h2>Add a new Blog</h2>
 
+    <p>Blog Name</p>
 <input type="text" ng-model="blog.name">
+<br />
+
+<p>Blog Category</p>
+
 <input type="text" ng-model="blog.category">
-<input type="number" ng-model="blog.backlinks">
-<button ng-click="addBlog()">Add Blog</button>
+<br />
+<p>Backlinks to Blog</p>
+<input type="number" ng-model="blog.backLinks">
+<br />
+<button class="addBlogButton" ng-click="addBlog()">Add Blog</button>
+
+<h2>Load added Blogs</h2>
+<button ng-click="loadAllBlogs()">Load all Blogs</button>
+
+<ul>
+    <li ng-repeat="singleBlog in blogs">
+       Name: {{ singleBlog.name }} Category: {{ singleBlog.category }}  BackLinks: {{ singleBlog.backLinks }}
+    </li>
+</ul>
+</div>

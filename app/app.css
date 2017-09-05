@@ -11,6 +11,15 @@
   content: "[";
 }
 
+#blogView p {
+  width: 191px !important;
+  margin: 0px;
+}
+
+.addBlogButton {
+  margin-top: 24px;
+}
+
 .menu:after {
   content: "]";
 }
