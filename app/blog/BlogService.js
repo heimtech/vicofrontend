@@ -8,7 +8,7 @@ app.service('BlogService',  ['$http' , function ($http) {
 
     this.addBlog = function(pBlog) {
 
-        var lPromise = $http.post('http://localhost:8080/blog/add', pBlog);
+        var lPromise = $http.get('http://localhost:8080/datalake/add/1?text=huhu');
         /**
          * Created by HeimTech1 on 04.09.2017.
          */
